@@ -12,7 +12,7 @@ perl /usr/local/allpathslg-44837/src/ErrorCorrectReads.pl PAIRED_READS_A_IN=trim
 
 ### FastqSifter (filter out mitochondrial reads)
 
-FastqSifter --out=noMT --fasta=Dolioletta_gegenbauri_mtgenome.fa --left=Dgeg.A.fq --right=Dgeg.B.fq --ump =Dgeg.unp.fq
+FastqSifter --out=noMT --fasta=Dolioletta_gegenbauri_mtgenome.fa.gz --left=Dgeg.A.fq --right=Dgeg.B.fq --ump =Dgeg.unp.fq
 
 ### Platanus (short-read assemblies)
 
