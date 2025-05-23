@@ -54,6 +54,8 @@ matemaker --print_inserts --print_coords --assembly=<ASSEMBLY> --insertsize=2000
 
 ### SSPACE (scaffold optimal assembly)
 
+NOTE: illumina_libraries.txt is in this repository
+
 ```bash
 SSPACE_Standard_v3.0.pl -l illumina_libraries.txt -s scaffolds.reduced.fa -T 48 -k 5 -a 0.7 -x 0 -b Doli_scf
 ```
@@ -104,6 +106,8 @@ matemaker --assembly all_longreads.fa --insertsize=30000 --out=30k &
 ```
 
 ### SSPACE (scaffold short read assembly w artificial mate pairs from long reads)
+
+NOTE: longread_libraries.txt is in this repository
 
 ```bash
 SSPACE_Standard_v3.0.pl -l longread_libraries.txt -s tmp.fa -T 48 -k 5 -a 0.7 -x 0 -b Dgeg_redundans_scf_w_pacbio_and_minion
